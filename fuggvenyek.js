@@ -15,10 +15,8 @@ export function tabla(){
 }
 
 export function gyalogHozzaAd(){
-    const kELEM = $(".kocka").on("click", function(){
-        kELEM.html("<div><img src='gyalog.jpg' alt='gyalog'></div>");
-        /* if (!$(this).find('img').length) {
-            $(this).append("<img src='gyalog.jpg' alt='gyalog'>");
-        } */
+    const kELEM = $(".kocka")
+    kELEM.on("click", function(event){
+        $(event.target).html("<div><img src='gyalog.jpg' alt='gyalog'></div>");
     })
 }
